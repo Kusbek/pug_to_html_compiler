@@ -9,5 +9,5 @@ Attributes can be single and multiline
 
 ## How to use
 In the project directory run by cmd
->python PugToHtml.py -f "testWithSelfClosingSyntaxError.pug" -o "Output.html" 
+>>python PugToHtml.py -f "testWithSelfClosingSyntaxError.pug" -o "Output.html" 
 
