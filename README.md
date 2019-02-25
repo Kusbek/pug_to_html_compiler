@@ -17,7 +17,7 @@ In the project directory run by cmd
 Two additional pug files \"testWithNestedSelfClosingError.pug\" and \"testWithSelfClosingSyntaxError.pug\" can be tested as well
 
 ## Example of pug file 
-
+It contains every instance of described tags and attributes
 ```
 html
 	body	
@@ -51,4 +51,36 @@ html
 			)
 
 ```
+## Output file 
+I did not use any python html prettifier, because it performs bad. Instead I used online tools
+```
+<html ><body > <div id = "imageControl", class = "jay", name = "gavnyuk"/>Self Closing<ul class = "card", name = "Beka"><li id = "1">Item A<div ></div></li><li id = "2">Item B<div ></div></li><li id = "3">Item C<div ></div></li></ul><ul id = "1"><div type='checkbox' name='agreement' checked><input id = "2"/> <div class = "divka"><a ><img /></a></div></div></ul><div ><input type='checkbox' name='agreement' checked/><input type='button' name='Beka'/></div></body></html>
 
+```
+-----------------------------------------
+```
+<html>
+
+<body>
+    <div id="imageControl" , class="jay" , name="gavnyuk" />Self Closing
+    <ul class="card" , name="Beka">
+        <li id="1">Item A
+            <div></div>
+        </li>
+        <li id="2">Item B
+            <div></div>
+        </li>
+        <li id="3">Item C
+            <div></div>
+        </li>
+    </ul>
+    <ul id="1">
+        <div type='checkbox' name='agreement' checked><input id="2" />
+            <div class="divka"><a><img /></a></div>
+        </div>
+    </ul>
+    <div><input type='checkbox' name='agreement' checked/><input type='button' name='Beka' /></div>
+</body>
+
+</html>
+```
