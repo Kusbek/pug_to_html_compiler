@@ -7,7 +7,14 @@ standard and custom self closing tags, block expansion.
 ## Attributes
 Attributes can be single and multiline
 
+## Error Handling
+It reports two types of error:
+-Nested self closing error
+-Custom self closing syntax error
+
 ## How to use
 In the project directory run by cmd
->\>python PugToHtml.py -f "testWithSelfClosingSyntaxError.pug" -o "Output.html" 
+>\>python PugToHtml.py -f "test.pug" -o "output.html" 
+
+Two additional pug files \"testWithNestedSelfClosingError.pug\" and \"testWithSelfClosingSyntaxError.pug\" can be tested as well
 
